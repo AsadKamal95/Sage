@@ -1,0 +1,103 @@
+body{
+    background-color: #1e1f20;
+}
+p{
+    color:#e9cb7a;
+}
+
+.contact-container{
+    width: 100%;
+}
+
+.contact-container .contact-body{
+    padding: 3% 4%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container .contact-body .header p{
+    font-size: 3vw;
+    font-weight: 500;
+    margin: 0%;
+    margin-bottom: 3.5%;
+}
+
+.contact-container .contact-body .info {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-left: 2%;
+}
+
+.contact-container .contact-body .info .cafe-pic img{
+    width: 380px;
+}
+
+.contact-container .contact-body .info .cafe-details{
+    display: flex;
+    flex-direction: column;
+    padding-left: 4%;
+    width: 50%;
+}
+.contact-container .contact-body .info .cafe-details p:nth-of-type(1){
+    font-size: 3vw;
+    font-weight: 500;
+    margin: 0%;
+    margin-bottom: 4%;
+}
+
+.contact-container .contact-body .info .cafe-details p{
+    font-size: 1.2vw;
+    font-weight: 400;
+    margin: 2% 0%;
+}
+.contact-container .contact-body .info .cafe-details .icons{
+    margin-right: 2%;
+}
+
+@media screen and (min-width:700px) and (max-width:850px){
+    .contact-container .contact-body{
+        padding: 8% 6%;
+    }
+    .contact-container .contact-body .info .cafe-pic img{
+        width: 200px;
+    }
+    .contact-container .contact-body .info .cafe-details{
+        width: 60%;
+    }
+    
+    .contact-container .contact-body .info .cafe-details p{
+        font-size: 1.7vw;
+        font-weight: 400;
+        margin: 3% 0%;
+        text-align: justify;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width:500px){
+    .contact-container .contact-body{
+        padding: 10% 6%;
+    }
+    .contact-container .contact-body .header p{
+        font-size: 4.5vw;
+        font-weight: 500;
+        margin: 0%;
+        margin-bottom: 3.5%;
+    }
+    .contact-container .contact-body .info .cafe-pic img{
+        width: 150px;
+    }
+    .contact-container .contact-body .info .cafe-details p:nth-of-type(1){
+        font-size: 4.5vw;
+        font-weight: 500;
+        margin: 0%;
+        margin-bottom: 6%;
+    }
+    
+    .contact-container .contact-body .info .cafe-details p{
+        font-size: 3vw;
+        font-weight: 400;
+        margin: 3% 0%;
+        text-align: justify;
+    }
+}

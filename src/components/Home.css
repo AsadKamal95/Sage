@@ -1,0 +1,691 @@
+body{
+    background-color: #1e1f20;
+    /* overflow-y: hidden; */
+}
+
+.home-container{
+    width: 98%;
+    padding: 0% 1%;
+}
+.home-container .home-body{
+    height: 500px;
+}
+.home-container .home-body .slideshow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 84vh;
+    width: 100%;
+    background-size: cover;}
+.home-container .home-body .slideshow img{
+  width: 100%;
+  opacity: 0.6;
+  object-fit: cover;
+  /* z-index: -1; */
+}
+
+/* .home-container .home-body .logo{
+    background-image: url("../assets/Logo.png");
+    width: 19%;
+    height: 22%;
+    background-repeat: no-repeat;
+    background-color: #1e1f20;
+    position: absolute;
+    transform: translate(210%, -250%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    opacity: 0.6;
+} */
+.home-container .home-body .logo{
+    position: absolute;
+}
+.home-container .home-body .logo img{
+    width: 300px;
+    position: absolute;
+    transform: translate(250%, -250%);
+    opacity: 0.6;
+}
+
+
+/* Menu */
+.home-container .home-body .menu{
+    display: flex;
+    flex-direction: column;
+}
+.home-container .home-body .menu p:nth-of-type(1){
+    color: #e9cb7a;
+    font-size: 2vw;
+    font-weight: 500;
+    margin: 1%;
+    text-align: center;
+}
+
+
+/* image left, menu right */
+
+.home-container .home-body .menu .appetizers{
+    display: flex;
+    flex-direction:row;
+    margin-bottom: 2%;
+}
+
+.home-container .home-body .menu .appetizers .left{
+    padding-top: 2%;
+    width: 50%;
+    height: auto;
+}
+.home-container .home-body .menu .appetizers .left img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.home-container .home-body .menu .appetizers .right{
+    display: flex;
+    flex-direction: column;
+    /* justify-items: center; */
+    width: 49%;
+}
+.home-container .home-body .menu .appetizers .right p:nth-of-type(1){
+    color: #e9cb7a;
+    font-size: 1.5vw;
+    font-weight: 500;
+    margin-top: 0%;
+    margin-bottom: 3%;
+}
+
+.home-container .home-body .menu .appetizers .right .item{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    margin-bottom: 2%;
+}
+.home-container .home-body .menu .appetizers .right .item .item-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.home-container .home-body .menu .appetizers .right .item .item-header p{
+    font-size: 1.2vw;
+    font-weight: 500;
+    color: #e9cb7a;
+    margin: 2% 0%;
+    text-align: start;
+}
+.home-container .home-body .menu .appetizers .right .item .item-description{
+    padding: 0% 1.5%;
+}
+.home-container .home-body .menu .appetizers .right .item .item-description p{
+    font-size: 1.2vw;
+    font-weight: 400;
+    color: #e9cb7a;
+    text-align: start;
+    margin: 0%;
+}
+
+
+/* image right, menu left */
+
+.home-container .home-body .menu .Soups-and-Salads{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    height: 50%;
+    margin-bottom: 2%;
+}
+.home-container .home-body .menu .Soups-and-Salads .right{
+    padding-top: 2%;
+    width: 50%;
+    height: auto;
+}
+.home-container .home-body .menu .Soups-and-Salads .right img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.home-container .home-body .menu .Soups-and-Salads .left{
+    width:55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.home-container .home-body .menu .Soups-and-Salads .left p:nth-of-type(1){
+    color: #e9cb7a;
+    font-size: 1.5vw;
+    font-weight: 500;
+    margin-top: 0%;
+    margin-bottom: 3%;
+}
+.home-container .home-body .menu .Soups-and-Salads .left .item{
+    display: flex;
+    flex-direction: row;
+    padding-left: 5%;
+    margin-bottom: 2%;
+    width: 100%;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+}
+
+.home-container .home-body .menu .Soups-and-Salads .left .item .item-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+.home-container .home-body .menu .Soups-and-Salads .left .item .item-header p{
+    font-size: 1.2vw;
+    font-weight: 500;
+    color: #e9cb7a;
+    margin: 2% 0%;
+}
+
+
+/* burgers */
+
+.home-container .home-body .menu .appetizers .left-burger{
+    padding-top: 2%;
+    width: 50%;
+    height: 50%;
+}
+.home-container .home-body .menu .appetizers .left-burger img{
+    object-fit: cover;
+    width: 85%;
+    height: 80%;
+    opacity: 0.4;
+}
+
+
+/* sandwiches */
+
+.home-container .home-body .menu .Sandwich{
+    display: flex;
+    flex-direction:row;
+    margin-bottom: 2%;
+    justify-content: space-between;
+    height: 50%;
+}
+.home-container .home-body .menu .Sandwich .right{
+    padding-top: 2%;
+    width: 50%;
+    height: auto;
+}
+.home-container .home-body .menu .Sandwich .right img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.home-container .home-body .menu .Sandwich .left{
+    width:55%;
+    height: 100%;
+}
+.home-container .home-body .menu .Sandwich .left p:nth-of-type(1){
+    color: #e9cb7a;
+    font-size: 1.5vw;
+    font-weight: 500;
+    margin-top: 0%;
+    margin-bottom: 3%;
+}
+.home-container .home-body .menu .Sandwich .left .item{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    margin: 4% 0%;
+    padding-right: 5%;
+}
+
+.home-container .home-body .menu .Sandwich .left .item .item-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.home-container .home-body .menu .Sandwich .left .item .item-header p{
+    font-size: 1.2vw;
+    font-weight: 500;
+    color: #e9cb7a;
+    margin: 2% 0%;
+}
+
+.home-container .home-body .menu .Sandwich .left .item .item-description{
+    padding: 0% 1.5%;
+}
+.home-container .home-body .menu .Sandwich .left .item .item-description p{
+    font-size: 1.2vw;
+    font-weight: 400;
+    color: #e9cb7a;
+    text-align: start;
+    margin: 0%;
+}
+
+
+/* Main Entrees */
+
+/* Chicken */
+
+.home-container .home-body .menu .Chicken{
+    display: flex;
+    flex-direction:row;
+    margin-bottom: 2%;
+}
+
+.home-container .home-body .menu .Chicken .left{
+    padding-top: 2%;
+    width: 50%;
+    height: auto;
+}
+.home-container .home-body .menu .Chicken .left img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.home-container .home-body .menu .Chicken .right{
+    display: flex;
+    flex-direction: column;
+    /* justify-items: center; */
+    width: 49%;
+}
+.home-container .home-body .menu .Chicken .right p:nth-of-type(1){
+    color: #e9cb7a;
+    font-size: 1.5vw;
+    font-weight: 500;
+    margin-top: 0%;
+    margin-bottom: 3%;
+}
+
+.home-container .home-body .menu .Chicken .right .item{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    margin-bottom: 2%;
+}
+.home-container .home-body .menu .Chicken .right .item .item-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.home-container .home-body .menu .Chicken .right .item .item-header p{
+    font-size: 1.2vw;
+    font-weight: 500;
+    color: #e9cb7a;
+    margin: 2% 0%;
+    text-align: start;
+}
+.home-container .home-body .menu .Chicken .right .item .item-description{
+    padding: 0% 1.5%;
+}
+.home-container .home-body .menu .Chicken .right .item .item-description p{
+    font-size: 1.2vw;
+    font-weight: 400;
+    color: #e9cb7a;
+    text-align: start;
+    margin: 0%;
+}
+
+
+/* beef steaks*/
+
+.home-container .home-body .menu .beef-steak{
+    display: flex;
+    flex-direction:row;
+    /* margin-top: 2%; */
+    justify-content: space-around;
+    height: 30%;
+    margin-bottom: 2%;
+}
+.home-container .home-body .menu .beef-steak .right{
+    padding-top: 2%;
+    width: 50%;
+    height: auto;
+}
+.home-container .home-body .menu .beef-steak .right img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.home-container .home-body .menu .beef-steak .left{
+    width:55%;
+    height: 100%;
+}
+.home-container .home-body .menu .beef-steak .left p:nth-of-type(1){
+    color: #e9cb7a;
+    font-size: 1.5vw;
+    font-weight: 500;
+    margin-top: 0%;
+    margin-bottom: 3%;
+}
+.home-container .home-body .menu .beef-steak .left .item{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    margin-bottom: 2%;
+    padding-right: 5%;
+}
+
+.home-container .home-body .menu .beef-steak .left .item .item-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.home-container .home-body .menu .beef-steak .left .item .item-header p{
+    font-size: 1.2vw;
+    font-weight: 500;
+    color: #e9cb7a;
+    margin: 2% 0%;
+}
+
+.home-container .home-body .menu .beef-steak .left .item .item-description{
+    padding: 0% 1.5%;
+}
+.home-container .home-body .menu .beef-steak .left .item .item-description p{
+    font-size: 1.2vw;
+    font-weight: 400;
+    color: #e9cb7a;
+    text-align: start;
+    margin: 0%;
+}
+
+
+/* side orders */
+
+/* .home-container .home-body .menu .appetizers .left-side-order{
+    padding-top: 2%;
+    width: 50%;
+    height: 50%;
+}
+.home-container .home-body .menu .appetizers .left-side-order img{
+    object-fit: cover;
+    width: 85%;
+    height: 80%;
+    opacity: 0.4;
+} */
+
+
+
+
+
+.home-container .home-body .menu .appetizers .left-seafood{
+    padding-top: 2%;
+    width: 50%;
+    height: auto;
+}
+.home-container .home-body .menu .appetizers .left-seafood img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+
+
+@media screen and (min-width:700px) and (max-width:850px) {
+    .home-container .home-body .logo{
+        position: absolute;
+    }
+    .home-container .home-body .logo img{
+        width: 230px;
+        position: absolute;
+        transform: translate(120%, -400%);
+        opacity: 0.6;
+    }
+
+    .home-container .home-body .menu p:nth-of-type(1){
+        font-size: 3.5vw;
+        margin: 2%;
+    }
+    /* Appetizers */
+    .home-container .home-body .menu .appetizers .right p:nth-of-type(1){
+        font-size: 3vw;
+    }
+    .home-container .home-body .menu .appetizers .right .item{
+        margin-bottom: 5%;
+    }
+    .home-container .home-body .menu .appetizers .right .item .item-header p{
+        font-size: 2vw;
+    }
+    .home-container .home-body .menu .appetizers .right .item .item-description p{
+        font-size: 1.7vw;
+        text-align: justify;
+        line-height: 1.6vh;
+    }
+
+    /* Soups and salads */
+    .home-container .home-body .menu .Soups-and-Salads .left p:nth-of-type(1){
+        font-size: 3vw;
+    }
+    .home-container .home-body .menu .Soups-and-Salads .left .item .item-header p{
+        font-size: 2vw;
+    }
+    .home-container .home-body .menu .Soups-and-Salads .left .item .item-header p:nth-of-type(1){
+        width: 70%;
+    }
+    .home-container .home-body .menu .Soups-and-Salads .left .item .item-header p:nth-of-type(2){
+        width: 25%;
+    }
+    /* Sandwiches */
+    .home-container .home-body .menu .Sandwich .left p:nth-of-type(1){
+        font-size: 3vw;
+    }
+    .home-container .home-body .menu .Sandwich .left .item .item-header p{
+        font-size: 2vw;
+    }
+    .home-container .home-body .menu .Sandwich .left .item .item-description p{
+        font-size: 1.7vw;
+        text-align: justify;
+        line-height: 1.6vh;
+    }
+    /* Chicken */
+
+    .home-container .home-body .menu .Chicken .right p:nth-of-type(1){
+        font-size: 3vw;
+    }
+    .home-container .home-body .menu .Chicken .right .item .item-header p{
+        font-size: 2vw;
+    }
+    .home-container .home-body .menu .Chicken .right .item .item-description p{
+        font-size: 1.7vw;
+        /* text-align: justify; */
+        line-height: 1.6vh;
+    }
+
+    /* beef steak */
+    .home-container .home-body .menu .beef-steak .left p:nth-of-type(1){
+        font-size: 3vw;
+    }
+    .home-container .home-body .menu .beef-steak .left .item .item-header p{
+        font-size: 2vw;
+    }
+    .home-container .home-body .menu .beef-steak .left .item .item-description p{
+        font-size: 1.7vw;
+        text-align: justify;
+        line-height: 1.6vh;
+    }
+}
+
+
+@media screen and (min-width:380px) and (max-width:500px) {
+    .home-container .home-body .logo{
+        position: absolute;
+    }
+    .home-container .home-body .logo img{
+        width: 230px;
+        position: absolute;
+        transform: translate(40%, -350%);
+        opacity: 0.6;
+    }
+
+    .home-container .home-body .menu p:nth-of-type(1){
+        font-size: 4vw;
+        margin: 2%;
+    }
+    /* Appetizers */
+    .home-container .home-body .menu .appetizers .right p:nth-of-type(1){
+        font-size: 3.5vw;
+    }
+    .home-container .home-body .menu .appetizers .right .item{
+        margin-bottom: 5%;
+    }
+    .home-container .home-body .menu .appetizers .right .item .item-header p{
+        font-size: 2.5vw;
+    }
+    .home-container .home-body .menu .appetizers .right .item .item-description p{
+        font-size: 2.2vw;
+        text-align: justify;
+        line-height: 1.2vh;
+    }
+
+    /* Soups and salads */
+    .home-container .home-body .menu .Soups-and-Salads .left p:nth-of-type(1){
+        font-size: 3.5vw;
+    }
+    .home-container .home-body .menu .Soups-and-Salads .left .item .item-header p{
+        font-size: 2.5vw;
+    }
+    .home-container .home-body .menu .Soups-and-Salads .left .item .item-header p:nth-of-type(1){
+        width: 80%;
+    }
+    .home-container .home-body .menu .Soups-and-Salads .left .item .item-header p:nth-of-type(2){
+        width: 25%;
+    }
+    /* Sandwiches */
+    .home-container .home-body .menu .Sandwich .left p:nth-of-type(1){
+        font-size: 3.5vw;
+    }
+    .home-container .home-body .menu .Sandwich .left .item .item-header p{
+        font-size: 2.5vw;
+    }
+    .home-container .home-body .menu .Sandwich .left .item .item-description p{
+        font-size: 2.2vw;
+        text-align: justify;
+    }
+    /* Chicken */
+    .home-container .home-body .menu .Chicken .right .item .item-header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    /* .home-container .home-body .menu .Chicken .right .item .item-header p{
+        font-size: 1.2vw;
+        font-weight: 500;
+        color: #e9cb7a;
+        margin: 2% 0%;
+    } */
+
+    .home-container .home-body .menu .Chicken .right p:nth-of-type(1){
+        font-size: 3.5vw;
+    }
+    .home-container .home-body .menu .Chicken .right .item .item-header p{
+        font-size: 2.5vw;
+    }
+    .home-container .home-body .menu .Chicken .right .item .item-description p{
+        font-size: 2.2vw;
+        text-align: justify;
+    }
+
+    /* beef steak */
+    .home-container .home-body .menu .beef-steak .left p:nth-of-type(1){
+        font-size: 3.5vw;
+    }
+    .home-container .home-body .menu .beef-steak .left .item .item-header p{
+        font-size: 2.5vw;
+    }
+    .home-container .home-body .menu .beef-steak .left .item .item-description p{
+        font-size: 2.2vw;
+        text-align: justify;
+    }
+}
+
+@media screen and (min-width:0px) and (max-width:380px) {
+    .home-container .home-body .logo{
+        position: absolute;
+    }
+    .home-container .home-body .logo img{
+        width: 230px;
+        position: absolute;
+        transform: translate(30%, -300%);
+        opacity: 0.6;
+    }
+
+    .home-container .home-body .menu p:nth-of-type(1){
+        font-size: 4vw;
+        margin: 2%;
+    }
+    /* Appetizers */
+    .home-container .home-body .menu .appetizers .right p:nth-of-type(1){
+        font-size: 3.5vw;
+    }
+    .home-container .home-body .menu .appetizers .right .item{
+        margin-bottom: 5%;
+    }
+    .home-container .home-body .menu .appetizers .right .item .item-header p{
+        font-size: 2.5vw;
+    }
+    .home-container .home-body .menu .appetizers .right .item .item-description p{
+        font-size: 2.2vw;
+        text-align: justify;
+        line-height: 1.2vh;
+    }
+
+    /* Soups and salads */
+    .home-container .home-body .menu .Soups-and-Salads .left p:nth-of-type(1){
+        font-size: 3.5vw;
+    }
+    .home-container .home-body .menu .Soups-and-Salads .left .item .item-header p{
+        font-size: 2.5vw;
+    }
+    .home-container .home-body .menu .Soups-and-Salads .left .item .item-header p:nth-of-type(1){
+        width: 70%;
+    }
+    .home-container .home-body .menu .Soups-and-Salads .left .item .item-header p:nth-of-type(2){
+        width: 25%;
+    }
+    /* Sandwiches */
+    .home-container .home-body .menu .Sandwich .left p:nth-of-type(1){
+        font-size: 3.5vw;
+    }
+    .home-container .home-body .menu .Sandwich .left .item .item-header p{
+        font-size: 2.5vw;
+    }
+    .home-container .home-body .menu .Sandwich .left .item .item-description p{
+        font-size: 2.2vw;
+        text-align: justify;
+    }
+    /* Chicken */
+
+    .home-container .home-body .menu .Chicken .right p:nth-of-type(1){
+        font-size: 3.5vw;
+    }
+    .home-container .home-body .menu .Chicken .right .item .item-header p{
+        font-size: 2.5vw;
+    }
+    .home-container .home-body .menu .Chicken .right .item .item-description p{
+        font-size: 2.2vw;
+        text-align: justify;
+    }
+
+    /* beef steak */
+    .home-container .home-body .menu .beef-steak .left p:nth-of-type(1){
+        font-size: 3.5vw;
+    }
+    .home-container .home-body .menu .beef-steak .left .item .item-header p{
+        font-size: 2.5vw;
+    }
+    .home-container .home-body .menu .beef-steak .left .item .item-description p{
+        font-size: 2.2vw;
+        text-align: justify;
+    }
+}
