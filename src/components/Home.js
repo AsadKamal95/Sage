@@ -20,7 +20,7 @@ import dessert from "../assets/desserts.jpg"
 import cocktails from "../assets/cocktails2.jpg"
 import softdrinks from "../assets/softdrinks.jpg"
 import hotbeverages from "../assets/hot-beverages.jpg"
-
+import appetizerItem1 from "../assets/appetizers_item1.jpg";
 
 const Slideshow = ({ images }) => {
     const [index, setIndex] = useState(0);
@@ -47,7 +47,14 @@ const Slideshow = ({ images }) => {
         bg3
       ];
 
+    
+    
 const Home = () => {
+    const [itemImage, setItemImage] = useState(0);
+
+    const handleImage = () =>{
+      setItemImage(!itemImage);
+    }
     return ( <>
     <Navbar/>
     <div className="home-container">
@@ -67,13 +74,17 @@ const Home = () => {
                 <div className="right">
                   <p>Appetizers</p>
                   <div className="item">
-                    <div className="item-header">
+                    <div className="item-header" onClick={handleImage}>
                       <p>Stuffed Chicken Strips</p>
                       <p>Rs. 1095</p>
                     </div>
                     <div className="item-description">
                       <p>Fried chicken strips stuffed with cream cheese and herbs served with honey mustard sauce</p>
                     </div>
+                    {itemImage && <div className="viewItem">
+                      <img src={appetizerItem1} alt="Fried Chicken Strips" />
+                    </div>}
+                    
                   </div>
                   <div className="item">
                     <div className="item-header">

@@ -107,6 +107,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 }
 .home-container .home-body .menu .appetizers .right .item .item-header p{
     font-size: 1.2vw;
@@ -124,6 +125,19 @@ body{
     color: #e9cb7a;
     text-align: start;
     margin: 0%;
+}
+
+.home-container .home-body .menu .appetizers .right .item .viewItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2%;
+}
+.home-container .home-body .menu .appetizers .right .item .viewItem img{
+    width: 43vw;
+    height: 40vh;
+    border-radius: 0.5vw;
+    object-fit: cover;
 }
 
 
@@ -320,6 +334,9 @@ body{
     color: #e9cb7a;
     margin: 2% 0%;
     text-align: start;
+}
+.home-container .home-body .menu .Chicken .right .item .item-header p:nth-of-type(2){
+    width: 25%;
 }
 .home-container .home-body .menu .Chicken .right .item .item-description{
     padding: 0% 1.5%;
@@ -541,6 +558,13 @@ body{
     .home-container .home-body .menu .appetizers .right .item .item-header p{
         font-size: 2.5vw;
     }
+    .home-container .home-body .menu .appetizers .right .item .item-header p:nth-of-type(1){
+        width: 70%;
+    }
+    .home-container .home-body .menu .appetizers .right .item .item-header p:nth-of-type(2){
+        width: 25%;
+    }
+    
     .home-container .home-body .menu .appetizers .right .item .item-description p{
         font-size: 2.2vw;
         text-align: justify;
@@ -591,6 +615,12 @@ body{
     .home-container .home-body .menu .Chicken .right .item .item-header p{
         font-size: 2.5vw;
     }
+    .home-container .home-body .menu .Chicken .right .item .item-header p:nth-of-type(1){
+        width: 70%;
+    }
+    .home-container .home-body .menu .Chicken .right .item .item-header p:nth-of-type(2){
+        width: 25%;
+    }
     .home-container .home-body .menu .Chicken .right .item .item-description p{
         font-size: 2.2vw;
         text-align: justify;
@@ -633,6 +663,12 @@ body{
     }
     .home-container .home-body .menu .appetizers .right .item .item-header p{
         font-size: 2.5vw;
+    }
+    .home-container .home-body .menu .appetizers .right .item .item-header p:nth-of-type(1){
+        width: 70%;
+    }
+    .home-container .home-body .menu .appetizers .right .item .item-header p:nth-of-type(2){
+        width: 25%;
     }
     .home-container .home-body .menu .appetizers .right .item .item-description p{
         font-size: 2.2vw;
